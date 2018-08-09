@@ -1,0 +1,1 @@
+select * from openmrs.visit_form where Outcome_visit='Specialist referral' and (visit_form_visit_date >= "#startDate#" and visit_form_visit_date <= "#endDate#");

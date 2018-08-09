@@ -1,4 +1,5 @@
 {
+	"shouldOverRideConfig" : true,
     "id": "bahmni.clinical",
     "extensionPoints": [
         {
@@ -58,11 +59,10 @@
             		"Stage"
         		],
         		"personAttributes": [
-            		"class",
-            		"caste"
+            		"areaoforigin"
         		],
         		"additionalPatientIdentifiers": [
-           			"National ID"
+           			"Hepamud ID"
        		],
         		"preferredIdentifier": "Id_Number"
     	},

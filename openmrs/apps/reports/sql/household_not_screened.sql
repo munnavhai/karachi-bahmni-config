@@ -1,0 +1,1 @@
+select * from openmrs.registration where household_screened='false'

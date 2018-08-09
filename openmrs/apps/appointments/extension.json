@@ -1,4 +1,5 @@
 {
+ "shouldOverRideConfig" : true,
   "adminPage": {
     "id": "bahmni.appointments.admin",
     "extensionPointId": "org.bahmni.appointments",

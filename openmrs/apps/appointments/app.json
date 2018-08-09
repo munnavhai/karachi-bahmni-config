@@ -1,4 +1,5 @@
 {
+"shouldOverRideConfig" : true,
   "id": "bahmni.appointments",
   "description": "Bahmni Appointments Scheduling App",
   "extensionPoints": [
@@ -9,9 +10,9 @@
   ],
   "config": {
     "minCharLengthToTriggerPatientSearch": 3,
-    "enableSpecialities": false,
-    "startOfWeek": 1,
-    "weekStart": "Week",
+    "enableSpecialities": true,
+    "startOfWeek": 2,
+    "weekStart": "isoWeek",
     "calendarSlotDuration": "00:30",
     "calendarSlotLabelInterval": "01:00",
     "startOfDay":"09:00",
@@ -21,11 +22,11 @@
     "enableCalendarView": true,
     "isServiceOnAppointmentEditable": true,
     "colorsForAppointmentService": [
-      "#00ff00",
-      "#ff3300",
-      "#0000ff",
-      "#ff9900",
-      "#ffffff",
+      "#006400",
+      "#DC143C",
+      "#00008B",
+      "#3F51B5",
+      "#B8860B",
       "#A9A9A9",
       "#BDB76B",
       "#8B008B",
