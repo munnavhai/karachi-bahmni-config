@@ -31,15 +31,16 @@
         "order": 1,
         "requiredPrivilege": "View Patients"
     },
+	
 	"visitForm":{
         "id": "bahmni.registration.conceptSetGroup.visitInformation",
         "extensionPointId": "org.bahmni.registration.conceptSetGroup.observations",
-        "type": "forms",
+        "type": "config",
         "extensionParams": {
-            "formName": "Visit Form",
-            "conceptNames": ["Visit Form"],
+            "conceptName": "Visit Form",
+			 "conceptNames": ["Date of the visit", "Type of visit", "Outcome of the visit", "Treatment Regimen"],
             "required":true,
-            "showLatest": true
+			"showLatest": true
         },
         "order": 3,
         "requiredPrivilege": "Edit Visits"
