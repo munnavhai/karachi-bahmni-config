@@ -84,6 +84,50 @@
                 }
             },
             
-		   "afterVisitSaveForwardUrl" : "../clinical/#/default/patient/{{patientUuid}}/dashboard"
+		   "afterVisitSaveForwardUrl" : "../clinical/#/default/patient/{{patientUuid}}/dashboard",
+		   
+		    "conceptSetUI": {
+			
+				   "Date of the visit": {
+						"required": true,
+						"disableAddNotes": true
+				  },
+				  "Type of visit": {
+						"required": true,
+						"disableAddNotes": true,
+						"multiSelect": true
+				  },
+				  "Type of patient support session": {
+						"disableAddNotes": true
+				  },
+				  
+				  "Vaccine given": {
+						"disableAddNotes": true
+				  },
+				  
+				  "Ultrasound performed": {
+						"disableAddNotes": true
+				  },
+				  
+				  "Lab test performed": {
+						"disableAddNotes": true,
+						"multiSelect": true
+				  },
+				  
+				  "Treatment Regimen": {
+						"disableAddNotes": true
+				  },
+				  
+				  "Outcome of the visit": {
+						"required": true,
+						"disableAddNotes": true
+				  },
+				  
+				  "Specify lab test": {
+						"conciseText": true
+				  }
+				 
+			}
+
         }
 }
