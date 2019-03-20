@@ -74,7 +74,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
 			var conditions = {enable: [], disable: []};
 			var selectedValues = formFieldValues['Lab test performed'];
 		
-			var found = _.includes(selectedValues,"Other")
+			var found = _.includes(selectedValues,"LabTest - Other")
 			if(found) {
 				conditions.enable.push("Specify lab test")
 			} else {
