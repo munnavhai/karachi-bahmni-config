@@ -38,11 +38,11 @@
         "type": "config",
         "extensionParams": {
             "conceptName": "Visit Form",
-			 "conceptNames": ["Date of the visit", "Type of visit", "Outcome of the visit", "Treatment Regimen"],
-            "required":true,
-			"showLatest": true
-        },
+			 
+            "required":true
+			        },
         "order": 3,
         "requiredPrivilege": "Edit Visits"
     }
 }
+
