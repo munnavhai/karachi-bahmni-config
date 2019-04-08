@@ -29,6 +29,7 @@
                         "patientconsent",
                         "prefferedlangage",
                         "noofpeopleinhousehold",
+			"householdno",
 						"under12members"
                     ],
 					"order": 1
@@ -50,16 +51,17 @@
                     ]
                 },
                 "defaults":  {
-					
+				
                 }
             },
 		
 						
 	        "mandatoryPersonAttributes": ["areaoforigin", "telephonenumber", "patientconsent"],
-            "autoCompleteFields":["familyName", "dateofenrollment"],
+            "autoCompleteFields":["familyName"],
             "defaultVisitType": "OPD",
             "searchByIdForwardUrl": "/patient/{{patientUuid}}",
             "showMiddleName": false,
+"showFamilyName": true,
             "showLastName": true,
             "isLastNameMandatory": true,
             "showBirthTime": false,
@@ -89,8 +91,13 @@
 		    "conceptSetUI": {
 			
 				   "Date of the visit": {
+
 						"required": true,
 						"disableAddNotes": true
+
+
+               
+
 				  },
 				  "Type of visit": {
 						"required": true,
@@ -113,7 +120,11 @@
 						"disableAddNotes": true,
 						"multiSelect": true
 				  },
-				  
+				   "Type of family planning": {
+						"disableAddNotes": true,
+						"multiSelect": true
+				  },
+
 				  "Treatment Regimen": {
 						"disableAddNotes": true
 				  },
@@ -125,9 +136,12 @@
 				  
 				  "Specify lab test": {
 						"conciseText": true
-				  }
-				 
-			}
+				  },
+"defaults" : {
+     
+      "Date of the visit": "2019-04-01"
+   }
 
         }
+}
 }

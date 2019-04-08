@@ -65,7 +65,12 @@ Bahmni.ConceptSet.FormConditions.rules = {
 		} else {
 			conditions.disable.push("Type of patient support session")
 		}
-		
+		var found = _.includes(selectedValues,"FP")
+        if(found) {
+				conditions.enable.push("Type of family planning")
+			} else {
+				conditions.disable.push("Type of family planning")
+			}
 		return conditions;
 	  },
 	  
@@ -84,4 +89,5 @@ Bahmni.ConceptSet.FormConditions.rules = {
 		return conditions;
 		
 	  }
+
 };
