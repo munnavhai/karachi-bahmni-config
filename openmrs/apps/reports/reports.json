@@ -1,68 +1,12 @@
 {
-	"visitDetails":{
-		"name": "Visit Report",
-		"type": "formBuilder",
-		 "config": {
-			"patientAttributes": ["areaoforigin","telephonenumber"],
-			"visitAttributes": [],
-			"showVisitInfo": true,
-			"showProvider": true,
-			"formNamesToFilter": ["Visit Form"],
-			"conceptNameDisplayFormat": "shortNamePreferred",
-			"locationTagsToFilter": [],
-			"programsToFilter": [],
-			"applyDateRangeFor": "obsDate",
-			"visitTypesToFilter": []
-		}
-	},
+ 
 	
-"testreport":{
-    "name": "test report",
-    "type": "formBuilder",
-     "config": {
-        "patientAttributes": ["areaoforigin","telephonenumber"],
-        "showVisitInfo": true,
-        "showProvider": true,
-        "formNamesToFilter": ["Visit Form"],
-        "conceptNameDisplayFormat": "shortNamePreferred",
-        "locationTagsToFilter": [],
-        "programsToFilter": [],
-        "applyDateRangeFor": "visitStartDate",
-        "visitTypesToFilter": []
-    }
-},
-
-
 	"AreaofOriginCount": {
         "name": "Area of Origin Count",
-        "type": "aggregation",
-        "config": {
-            "report": {
-                "type": "programs",
-                "config": {
-                    "patientAttributes": [
-						"areaoforigin"
-                    ],
-                    "programAttributes": [],
-                    "forDataAnalysis": true,
-                    "showAllStates": true,
-                    "programNamesToFilter": [
-					
-                    ]
-                }
-            },
-            "columnGroups": [
-                "Gender"
-            ],
-            "rowGroups": [
-                "areaoforigin"
-            ],
-            "distinctGroups": [
-                "Patient Identifier"
-            ],
-            "showTotalRow":true,
-            "showTotalColumn":true
-        }
+        "type": "MRSGeneric",
+		"config": {
+		  "sqlPath": "/var/www/bahmni_config/openmrs/apps/reports/sql/area_of_origin.sql"
+		}
     },
    
    "UltrasoundPerformed": {
@@ -129,6 +73,13 @@
 		"type": "MRSGeneric",
 		"config": {
 		  "sqlPath": "/bahmni/default-config/openmrs/apps/reports/sql/fp_report.sql"
+		}
+  },
+"FP_Report": {
+		"name": "Family Planning Report",
+		"type": "MRSGeneric",
+		"config": {
+		  "sqlPath": "/var/www/bahmni_config/openmrs/apps/reports/sql/fp_report.sql"
 		}
   }
 
