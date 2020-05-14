@@ -65,7 +65,14 @@
 		"name": "Household not screened",
 		"type": "MRSGeneric",
 		"config": {
-		  "sqlPath": "/var/www/bahmni_config/openmrs/apps/reports/sql/household_not_screened.sql"
+		  "sqlPath": "/bahmni/default-config/openmrs/apps/reports/sql/household_not_screened.sql"
+		}
+  },
+"FP_Report": {
+		"name": "Family Planning Report",
+		"type": "MRSGeneric",
+		"config": {
+		  "sqlPath": "/bahmni/default-config/openmrs/apps/reports/sql/fp_report.sql"
 		}
   },
 "FP_Report": {
