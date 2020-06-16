@@ -1,81 +1,69 @@
 {
- 
-	
-	"AreaofOriginCount": {
-        "name": "Area of Origin Count",
-        "type": "MRSGeneric",
-		"config": {
-		  "sqlPath": "/var/www/bahmni_config/openmrs/apps/reports/sql/area_of_origin.sql"
-		}
-    },
-   
-   "UltrasoundPerformed": {
-    "name": "Ultrasound Performed Report (Custom Excel)",
-    "type": "MRSGeneric",
-    "config": {
-      "sqlPath": "/var/www/bahmni_config/openmrs/apps/reports/sql/num_ultrasounds.sql",
-      "macroTemplatePath" : "/var/www/bahmni_config/openmrs/apps/reports/macroTemplates/UltrasoundCountTemplate.xls"
-    }
-  },
-  
-  "VaccineCount": {
-    "name": "Vaccine Count Report (Custom Excel)",
-    "type": "MRSGeneric",
-    "config": {
-      "sqlPath": "/var/www/bahmni_config/openmrs/apps/reports/sql/vaccine_given.sql",
-      "macroTemplatePath" : "/var/www/bahmni_config/openmrs/apps/reports/macroTemplates/VaccineGivenTemplate.xls"
-    }
-  },
-  
-  "Regimen": {
-    "name": "Regimen Report (Custom Excel)",
-    "type": "MRSGeneric",
-    "config": {
-      "sqlPath": "/var/www/bahmni_config/openmrs/apps/reports/sql/vaccine_given.sql",
-      "macroTemplatePath" : "/var/www/bahmni_config/openmrs/apps/reports/macroTemplates/RegimenTemplate.xls"
-    }
-  },
-	
-   "SpecialistReferralCount": {
-    "name": "Specialist Referral Report (Custom Excel)",
-    "type": "MRSGeneric",
-    "config": {
-      "sqlPath": "/var/www/bahmni_config/openmrs/apps/reports/sql/specialist_referral.sql",
-      "macroTemplatePath" : "/var/www/bahmni_config/openmrs/apps/reports/macroTemplates/SpecialistReferralTemplate.xls"
-    }
-  },
-
-  "PatientsMissed": {
-		"name": "Patients Missed who were never rescheduled",
-		"type": "MRSGeneric",
-		"config": {
-		  "sqlPath": "/var/www/bahmni_config/openmrs/apps/reports/sql/patient_missed.sql"
-		}
-  },
-  
-  "PatientsMissed_Never_Completed_Appointment": {
-		"name": "Patients Missed who never completed an appointment and they don't have pending appointments",
-		"type": "MRSGeneric",
-		"config": {
-		  "sqlPath": "/var/www/bahmni_config/openmrs/apps/reports/sql/patient_missed_never_completed_appointment.sql"
-		}
-  },
-  
-  "Household_Not_Screened": {
-		"name": "Household not screened",
-		"type": "MRSGeneric",
-		"config": {
-		  "sqlPath": "/bahmni/default-config/openmrs/apps/reports/sql/household_not_screened.sql"
-		}
-  },
-"FP_Report": {
-		"name": "Family Planning Report",
-		"type": "MRSGeneric",
-		"config": {
-		  "sqlPath": "/bahmni/default-config/openmrs/apps/reports/sql/fp_report.sql"
-		}
-  }
-
-  
-  
+   "AreaofOriginCount":{
+      "name":"Area of Origin Count",
+      "type":"MRSGeneric",
+      "config":{
+         "sqlPath":"/var/www/bahmni_config/openmrs/apps/reports/sql/area_of_origin.sql"
+      }
+   },
+   "UltrasoundPerformed":{
+      "name":"Ultrasound Performed Report (Custom Excel)",
+      "type":"MRSGeneric",
+      "config":{
+         "sqlPath":"/var/www/bahmni_config/openmrs/apps/reports/sql/num_ultrasounds.sql",
+         "macroTemplatePath":"/var/www/bahmni_config/openmrs/apps/reports/macroTemplates/UltrasoundCountTemplate.xls"
+      }
+   },
+   "VaccineCount":{
+      "name":"Vaccine Count Report (Custom Excel)",
+      "type":"MRSGeneric",
+      "config":{
+         "sqlPath":"/var/www/bahmni_config/openmrs/apps/reports/sql/vaccine_given.sql",
+         "macroTemplatePath":"/var/www/bahmni_config/openmrs/apps/reports/macroTemplates/VaccineGivenTemplate.xls"
+      }
+   },
+   "Regimen":{
+      "name":"Regimen Report (Custom Excel)",
+      "type":"MRSGeneric",
+      "config":{
+         "sqlPath":"/var/www/bahmni_config/openmrs/apps/reports/sql/vaccine_given.sql",
+         "macroTemplatePath":"/var/www/bahmni_config/openmrs/apps/reports/macroTemplates/RegimenTemplate.xls"
+      }
+   },
+   "SpecialistReferralCount":{
+      "name":"Specialist Referral Report (Custom Excel)",
+      "type":"MRSGeneric",
+      "config":{
+         "sqlPath":"/var/www/bahmni_config/openmrs/apps/reports/sql/specialist_referral.sql",
+         "macroTemplatePath":"/var/www/bahmni_config/openmrs/apps/reports/macroTemplates/SpecialistReferralTemplate.xls"
+      }
+   },
+   "PatientsMissed":{
+      "name":"Patients Missed who were never rescheduled",
+      "type":"MRSGeneric",
+      "config":{
+         "sqlPath":"/var/www/bahmni_config/openmrs/apps/reports/sql/patient_missed.sql"
+      }
+   },
+   "PatientsMissed_Never_Completed_Appointment":{
+      "name":"Patients Missed who never completed an appointment and they don't have pending appointments",
+      "type":"MRSGeneric",
+      "config":{
+         "sqlPath":"/var/www/bahmni_config/openmrs/apps/reports/sql/patient_missed_never_completed_appointment.sql"
+      }
+   },
+   "Household_Not_Screened":{
+      "name":"Household not screened",
+      "type":"MRSGeneric",
+      "config":{
+         "sqlPath":"/var/www/bahmni_config/openmrs/apps/reports/sql/household_not_screened.sql"
+      }
+   },
+   "FP_Report":{
+      "name":"Family Planning Report",
+      "type":"MRSGeneric",
+      "config":{
+         "sqlPath":"/var/www/bahmni_config/openmrs/apps/reports/sql/fp_report.sql"
+      }
+   }
 }
